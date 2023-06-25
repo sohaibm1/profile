@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1fa97f5c9d.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -12,11 +15,11 @@
             <header>   
                 <nav id="navbar">
                     <ul>
-                        <li>Home</li>
-                        <li>Services</li>
-                        <li>Contact</li>
-                        <li>About</li>
-                        <li>About</li>
+                        <li><a href=""> Home</a></li>
+                        <li><a href="#services">Services</a> </li>
+                        <li> <a href="#footer
+                            ">Contact</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
                     </ul>
                 </nav>
             </header>
@@ -25,15 +28,17 @@
             <div id="main-content">
                 <h5>now you can watch the talent</h5>
                 <h1>let's explore ideas!</h1>
-                <button>explore now</button>
+                <button> <a href="#portfolio" class="down">go down<i class="fa fa-angle-double-down fa-xs fa-beat" aria-hidden="true"></i></a></button>
+            
             </div>
+
         </section>
         <section>
 <!-- portfolio -->
              <div id="portfolio">
                 <div class="heading">
-                     <h1>This is what we can do for you</h1>
-                     <p>Who are in extremely love with eco friendly system..</p>
+                     <h1>This is what I can do for you</h1>
+                     <p>Problem-solving and Creativity to Scale Your Business</p>
                  </div>
                 <div id="nav">
                     <ul>
@@ -41,7 +46,6 @@
                         <li>Html</li>
                         <li>Css</li>
                         <li>Javascript</li>
-                        <li>React<li>
                     </ul>
               </div>
 <!-- Cards -->
@@ -59,26 +63,51 @@
         <section>
             <div id="services">
                 <div class="serv">
-                    <h1 class="heading1">This is is what we can do for you</h1>
-                   <p>Who are in extremelylove with eco friendly system.</p>
+                    <h1 class="heading1">This is is what I can do for you</h1>
+                   <p>Problem-solving and Creativity to Scale Your Business</p>
                 </div>
             </div>
 <!-- cards 2 -->
                 <div class="cards2">
                     <div class="card-1">
-                        <h2>Corporate Identity</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, pariatur.</p>
+                        <i class="fa-brands fa-html5" style="color: red;"></i>
+                        <h2>HTML</h2>
+                        <p>HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating Web pages.</p>
                     </div>
                     <div class="card-2">
-                        <h2>Corporate Identity</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, pariatur.</p>
+                        <i class="fa-brands fa-css3-alt" style="color: skyblue;"></i>
+                        <h2>CSS</h2>
+                        <p>CSS is the acronym of “Cascading Style Sheets”. CSS is a computer language for laying out and structuring web pages.</p>
                     </div>
                     <div class="card-3">
-                        <h2>Corporate Identity</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, pariatur.</p>
+                        <i class="fa-brands fa-square-js" style="color: rgb(242, 242, 49);"></i>
+                        <h2>Javascript</h2>
+                        <p>JS stands for JavaScript.It is a text-based,lightweight,cross-platform and interpreted scripting programming language.</p>
                     </div>
                 </div>
            
+        </section>
+        <!-- Footer -->
+        <section>
+            <div id="footer">
+                <div class="about">
+                    <h5>About Me </h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, sint.
+                    </p>
+
+                <p class="copyright">Copyright ©2023 All right reserved | Made with <br> 💖 by Sohaib Muhammad</p>
+                </div>
+                <div class="newsletter">
+                    <h5>News Letter</h5>
+                    <p>Stay update with our latest.</p>
+                    <input type="email" placeholder="Enter Email">
+                    <button class="send">Send</button>
+                </div>
+                <div class="follow">
+                    <h5>Follow</h5>
+                    <p>Let Us Be Social</p>
+                </div>
+            </div>
         </section>
     </main>
 </body>

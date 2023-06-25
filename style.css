@@ -14,6 +14,7 @@
     font-family:  Arial, sans-serif;
     list-style-type: none;
     display: flex;
+    flex-direction: row;
     padding: 20px 20px;
     margin: 60px;
     justify-content: end;
@@ -23,6 +24,29 @@
 #navbar ul li{
     padding: 20px;
     cursor: pointer;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.down{
+    text-decoration: none;
+    color: white;
+}
+/* responsive navbar */
+@media only screen and (max-width: 680px){
+    #navbar>ul{
+        display: flex;
+        /* align-items: center; */
+        flex-direction: column;
+        justify-content: right;
+        align-items: end;
+
+        /* flex-direction: row-reverse; */
+        /* color: #1B1745; */
+    }
 }
 
 /* Main content */
@@ -63,20 +87,21 @@ font-size: 60px;
 #main-content>button{
     margin-top: 10px;
     color: white;
-    /* padding: 10px; */
+    padding-bottom:50px;
     width: 190px;
     height: 35px;
     border-radius: 100px;
     text-transform: uppercase;
     background-color: rgb(80, 237, 80);
     border: 0px;
+    cursor: pointer;
 
 }
 
 #main-content>button:hover{
     background: transparent;
     transition: .2s linear;
-    border: 1px solid white;
+    border: 1px solid white;    
 }
 /* portfolio */
 
@@ -91,17 +116,19 @@ font-size: 60px;
 }
 
 /* nav ul li */
-#nav ul{
+#nav>ul{
     display: flex;
     justify-content: center;
     list-style-type: none;
 }
-#nav ul>li{
-    margin: 20px auto;
+#nav>ul>li{
+    margin: 30px;
+    text-align: center;
+    cursor: pointer;
     /* padding: 20px 20px 20px 20px; */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-#nav ul>li:hover{
+#nav>ul>li:hover{
     border-bottom: 2px solid;
 }
 
@@ -185,30 +212,40 @@ font-size: 60px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  text-align: center;
   margin-top: -200px;
 } 
+i {
+    font-size: 40px;
+    margin-top: 20px ;
+}
 
- @media only screen and (max-width: 1280px) {
-    .cards2{
-        /* margin-top:0px; */
-        /* min-width: 400px; */
-     
-    }
-    }
-.card-1{
-    /* display: flex; */
+.card-1,.card-2,.card-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 309px;
     height: 200px;
     background-color: white;
+    text-align: justify;
+    padding: 20px;
+    line-height: 1.2rem;
     color: black;
     margin: 20px;
     border-radius: 20px;
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card-1>h2,.card-2>h2,.card-3>h2{
+    margin-top: 10px;
 }
 
-.card-2{
+.card-1>p,.card-2>p,.card-3>p{
+    margin-top: 10px;
+    word-spacing: 1px;
+}
+/* .card-2{
     width: 309px;
     height: 200px;
     background-color: white;
@@ -229,4 +266,64 @@ font-size: 60px;
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 
-} 
+}  */
+/* Footer */
+#footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1B1745;
+    height: 400px;
+    margin: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+.about{
+    color: white;
+    margin-top:100px;
+}
+
+.about>.copyright{
+    margin-top: 70px;
+}
+.newsletter{
+    color: white;
+    margin-top:100px;   
+}
+.follow{
+    color: white;
+    margin-top:100px;
+}
+.about>p,.newsletter>p,.follow>p{
+    font-size: 14px;
+    color: #68694F;
+}
+
+.newsletter>input{
+    background-color: rgb(120, 118, 118);
+    color: white;
+    padding: 20px;
+    border: none;
+    width: 250px;
+    height: 40px;
+}
+
+.newsletter>.send{
+    width: 50px;
+    height: 40px;
+    background-color: chartreuse;
+    border: none;
+    margin-left: -5px;
+    color: white;
+}
+
+@media only screen and (max-width: 780px) {
+    #footer{
+        /* background-color: #68694F; */
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        padding: 20px;
+        margin: 50px;
+     
+    }
+    }
